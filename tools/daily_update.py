@@ -33,6 +33,8 @@ DISC_FROM_GARMIN = {
 def garmin_login():
     from garminconnect import Garmin
     tokens = os.environ.get("GARMINTOKENS", "")
+    # BOM / Whitespace / Zeilenumbrüche entfernen (entstehen leicht beim Secret-Setzen)
+    tokens = tokens.lstrip("﻿").strip()
     if not tokens:
         raise RuntimeError("GARMINTOKENS Secret fehlt.")
     # Secret ist base64 des ~/.garminconnect Token-Ordners-Inhalts (garth)
