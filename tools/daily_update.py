@@ -164,12 +164,18 @@ def find_week_and_today(plan, today_iso):
     if not plan:
         return None, None, []
     td = date.fromisoformat(today_iso)
-    for w in plan["weeks"]:
+    weeks = plan["weeks"]
+    # 1) Woche, die HEUTE enthält
+    for w in weeks:
         ws = date.fromisoformat(w["weekStart"])
         if ws <= td <= ws + timedelta(days=6):
             today_day = next((d for d in w["days"] if d["date"] == today_iso), None)
             return w, today_day, w["days"]
-    return None, None, []
+    # 2) Heute außerhalb des Blocks → nächste anstehende Woche zeigen
+    #    (z.B. vor Blockstart), sonst die letzte Woche (nach Blockende).
+    upcoming = [w for w in weeks if date.fromisoformat(w["weekStart"]) > td]
+    w = upcoming[0] if upcoming else weeks[-1]
+    return w, None, w["days"]
 
 
 def build_today(today_day, v, score):
