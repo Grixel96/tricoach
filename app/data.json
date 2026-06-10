@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-10T19:11:00+02:00",
+  "generatedAt": "2026-06-10T19:16:00+02:00",
   "source": "Garmin Connect (Marvin Griegel)",
   "athlete": {
     "firstName": "Marvin",
@@ -143,7 +143,57 @@
       "v": 54
     }
   ],
-  "week": [],
+  "week": [
+    {
+      "day": "Mo",
+      "date": "2026-06-15",
+      "discipline": "swim",
+      "label": "Technik & Wassergefühl",
+      "status": "planned"
+    },
+    {
+      "day": "Di",
+      "date": "2026-06-16",
+      "discipline": "run",
+      "label": "Schwellenlauf",
+      "status": "planned"
+    },
+    {
+      "day": "Mi",
+      "date": "2026-06-17",
+      "discipline": "bike",
+      "label": "Sweet-Spot Endurance",
+      "status": "planned"
+    },
+    {
+      "day": "Do",
+      "date": "2026-06-18",
+      "discipline": "swim",
+      "label": "Ausdauer-Set",
+      "status": "planned"
+    },
+    {
+      "day": "Fr",
+      "date": "2026-06-19",
+      "discipline": "run",
+      "label": "Langer Lauf locker",
+      "status": "planned"
+    },
+    {
+      "day": "Sa",
+      "date": "2026-06-20",
+      "discipline": "bike",
+      "label": "Long Ride aerob",
+      "status": "planned"
+    },
+    {
+      "day": "So",
+      "date": "2026-06-21",
+      "discipline": "swim",
+      "label": "Technik-Recovery",
+      "status": "planned"
+    }
+  ],
   "recentActivities": [
     {
       "date": "2026-06-09",
