@@ -1,0 +1,572 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TriCoach//Marvin//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:TriCoach Training
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-06-15-swim-40573@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260615T070000
+DTEND;TZID=Europe/Berlin:20260615T075500
+SUMMARY:🏊 Schwimmen — Technik & Wassergefühl
+DESCRIPTION:Intensität: Z1–2\n\n• 300 m einschwimmen locker\n• 6×50 m 
+ Drills (Catch-up / Fingertip-Drag) /20s P\n• 8×50 m @ CSS+5s /15s P\n
+ • 100 m Beine mit Brett\n• 200 m ausschwimmen\n\nZiel: Frequenz + Tec
+ hnik. Sauber statt schnell.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🏊 Schwimmen — Technik & Wassergefühl
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-15-strength-59311@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260615T120000
+DTEND;TZID=Europe/Berlin:20260615T124500
+SUMMARY:💪 Kraft — Kraft Unterkörper + Rumpf
+DESCRIPTION:Intensität: —\n\n• Kniebeuge 3×8\n• Ausfallschritte 3×10/B
+ ein\n• Hip Thrust 3×10\n• Plank 3×45s + Side-Plank\n• Wadenheben 3×15
+ \n\nZiel: Verletzungsschutz\, Antrieb fürs Rad.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:💪 Kraft — Kraft Unterkörper + Rumpf
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-16-run-65199@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260616T173000
+DTEND;TZID=Europe/Berlin:20260616T183500
+SUMMARY:🏃 Lauf — Schwellenlauf
+DESCRIPTION:Intensität: Z4-Kern\n\n• 15′ einlaufen Z1–2\n• 4×6′ @ Schw
+ elle 4:08–4:18/km (HR 161–176)\, 2′ Trab dazwischen\n• 12′ auslaufen 
+ Z1\n\nZiel: Laktatschwelle anheben. Ökonomie halten.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🏃 Lauf — Schwellenlauf
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-17-bike-32553@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260617T160000
+DTEND;TZID=Europe/Berlin:20260617T172000
+SUMMARY:🚴 Rad — Sweet-Spot Endurance
+DESCRIPTION:Intensität: Z2–3\n\n• 20′ einrollen Z2\n• 3×10′ Sweet-Spot
+  (HR ~150–160\, RPE 7)\, 5′ locker dazwischen\n• Rest Z2\n• 10′ ausro
+ llen\n\nZiel: Aerobe Kraftausdauer ohne Ermüdungsspitze.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🚴 Rad — Sweet-Spot Endurance
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-18-swim-11497@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260618T070000
+DTEND;TZID=Europe/Berlin:20260618T080000
+SUMMARY:🏊 Schwimmen — Ausdauer-Set
+DESCRIPTION:Intensität: Z2\n\n• 300 m einschwimmen\n• 4×50 m Drill /15
+ s P\n• 5×150 m @ CSS+5s /20s P\n• 100 m locker\n• 200 m ausschwimmen\
+ n\nZiel: Kontinuität bis 1500 m+ aufbauen.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🏊 Schwimmen — Ausdauer-Set
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-18-strength-20760@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260618T120000
+DTEND;TZID=Europe/Berlin:20260618T124000
+SUMMARY:💪 Kraft — Kraft Oberkörper + Zug
+DESCRIPTION:Intensität: —\n\n• Klimmzüge/Latzug 3×8\n• Rudern 3×10\n• 
+ Schulterdrücken 3×10\n• Pull-Apart Band 3×15\n• Anti-Rotation Pallof 
+ 3×12\n\nZiel: Zugmuskulatur fürs Schwimmen.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:💪 Kraft — Kraft Oberkörper + Zug
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-19-run-80249@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260619T173000
+DTEND;TZID=Europe/Berlin:20260619T185000
+SUMMARY:🏃 Lauf — Langer Lauf locker
+DESCRIPTION:Intensität: Z2\n\n• 80′ durchgehend Z2 (HR 131–146\, 4:55–
+ 5:20/km)\n• Letzte 10′ leicht progressiv\n• Strikt aerob — nicht schn
+ eller werden lassen\n\nZiel: Aerobe Basis + Durability.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🏃 Lauf — Langer Lauf locker
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-20-bike-36727@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260620T160000
+DTEND;TZID=Europe/Berlin:20260620T190000
+SUMMARY:🚴 Rad — Long Ride aerob
+DESCRIPTION:Intensität: Z2\n\n• 3 h gleichmäßig Z2 (HR 131–146)\n• All
+ e 30′ kurz aus dem Sattel\n• Verpflegung üben: 60 g Kohlenhydrate/h\,
+  trinken\n\nZiel: Renndistanz-Ökonomie\, Fettstoffwechsel\, Fueling.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🚴 Rad — Long Ride aerob
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-20-run-16869@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260620T173000
+DTEND;TZID=Europe/Berlin:20260620T174500
+SUMMARY:🏃 Lauf — Brick-Lauf
+DESCRIPTION:Intensität: Z2–3\n\n• Direkt vom Rad\n• 15′ einlaufen ins 
+ Renngefühl\, letzte 5′ Renntempo (~4:40/km)\n\nZiel: Wechsel Rad→Lauf
+ \, müde Beine.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🏃 Lauf — Brick-Lauf
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-21-swim-25642@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260621T070000
+DTEND;TZID=Europe/Berlin:20260621T074500
+SUMMARY:🏊 Schwimmen — Technik-Recovery
+DESCRIPTION:Intensität: Z1\n\n• 200 m locker\n• 8×50 m Drills\, Fokus 
+ hohe Ellbogen\n• 4×100 m @ CSS+8s ganz locker\n• 150 m ausschwimmen\n
+ \nZiel: 3. Schwimmreiz/Woche\, lockeres Wassergefühl.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🏊 Schwimmen — Technik-Recovery
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-22-swim-8746@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260622T070000
+DTEND;TZID=Europe/Berlin:20260622T080000
+SUMMARY:🏊 Schwimmen — Technik & CSS-Snack
+DESCRIPTION:Intensität: Z1–2\n\n• 400 m einschwimmen\n• 6×50 m Drills\
+ n• 10×50 m @ CSS+3s /15s P\n• 200 m ausschwimmen\n\nZiel: Frequenz + 
+ leichte Intensität.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🏊 Schwimmen — Technik & CSS-Snack
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-22-strength-53596@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260622T120000
+DTEND;TZID=Europe/Berlin:20260622T124500
+SUMMARY:💪 Kraft — Kraft Unterkörper
+DESCRIPTION:Intensität: —\n\n• Kniebeuge 4×6 (schwerer)\n• Bulgarian S
+ plit Squat 3×8/Bein\n• Hip Thrust 3×10\n• Rumpf-Zirkel 10′\n\nZiel: M
+ aximalkraft-Tendenz.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:💪 Kraft — Kraft Unterkörper
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-23-run-75567@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260623T173000
+DTEND;TZID=Europe/Berlin:20260623T183500
+SUMMARY:🏃 Lauf — VO₂-Intervalle
+DESCRIPTION:Intensität: Z5\n\n• 15′ ein\n• 6×3′ @ 3:50–4:05/km (HR 176
+ +)\, 2:30 Trab\n• 12′ aus\n\nZiel: VO₂max-Reiz.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🏃 Lauf — VO₂-Intervalle
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-24-bike-75207@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260624T160000
+DTEND;TZID=Europe/Berlin:20260624T172500
+SUMMARY:🚴 Rad — Endurance + Sweet-Spot
+DESCRIPTION:Intensität: Z2–3\n\n• 20′ ein\n• 2×15′ Sweet-Spot\, 6′ loc
+ ker\n• Rest Z2\n• 10′ aus\n\nZiel: Kraftausdauer.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🚴 Rad — Endurance + Sweet-Spot
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-25-swim-73094@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260625T070000
+DTEND;TZID=Europe/Berlin:20260625T080500
+SUMMARY:🏊 Schwimmen — Ausdauer-Set lang
+DESCRIPTION:Intensität: Z2\n\n• 300 m ein\n• 6×50 m Drill\n• 6×150 m @
+  CSS+4s /20s P\n• 200 m aus\n\nZiel: Kontinuität 1800 m+.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🏊 Schwimmen — Ausdauer-Set lang
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-25-strength-76759@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260625T120000
+DTEND;TZID=Europe/Berlin:20260625T124000
+SUMMARY:💪 Kraft — Kraft Oberkörper
+DESCRIPTION:Intensität: —\n\n• Latzug 4×8\n• Rudern 3×10\n• Schulterdr
+ ücken 3×10\n• Pallof 3×12\n\nZiel: Zugkraft Schwimmen.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:💪 Kraft — Kraft Oberkörper
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-26-run-81995@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260626T173000
+DTEND;TZID=Europe/Berlin:20260626T190000
+SUMMARY:🏃 Lauf — Langer Lauf
+DESCRIPTION:Intensität: Z2\n\n• 90′ Z2\n• letzte 15′ progressiv bis Te
+ mpo\n\nZiel: Aerobe Basis.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🏃 Lauf — Langer Lauf
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-27-bike-36727@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260627T160000
+DTEND;TZID=Europe/Berlin:20260627T192000
+SUMMARY:🚴 Rad — Long Ride aerob
+DESCRIPTION:Intensität: Z2\n\n• 3:20 h Z2\n• Fueling 60–80 g KH/h\n• w
+ elliges Profil suchen (Zell-Vorbereitung)\n\nZiel: Distanz-Durability.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🚴 Rad — Long Ride aerob
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-27-run-16869@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260627T173000
+DTEND;TZID=Europe/Berlin:20260627T175000
+SUMMARY:🏃 Lauf — Brick-Lauf
+DESCRIPTION:Intensität: Z2–3\n\n• 20′ vom Rad\, letzte 8′ Renntempo\n\
+ nZiel: Wechselspezifik.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🏃 Lauf — Brick-Lauf
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-28-swim-25642@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260628T070000
+DTEND;TZID=Europe/Berlin:20260628T074500
+SUMMARY:🏊 Schwimmen — Technik-Recovery
+DESCRIPTION:Intensität: Z1\n\n• 8×50 Drills\n• 6×100 @ CSS+8s locker\n
+ • Beine + ausschwimmen\n\nZiel: 3. Reiz.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🏊 Schwimmen — Technik-Recovery
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-29-swim-36968@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260629T070000
+DTEND;TZID=Europe/Berlin:20260629T080500
+SUMMARY:🏊 Schwimmen — Technik + CSS-Set
+DESCRIPTION:Intensität: Z1–3\n\n• 400 m ein\n• 8×50 Drills\n• 12×50 @ 
+ CSS /15s P\n• 6×25 schnell\n• 200 aus\n\nZiel: Technik unter leichtem
+  Tempo.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🏊 Schwimmen — Technik + CSS-Set
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-29-strength-9916@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260629T120000
+DTEND;TZID=Europe/Berlin:20260629T124500
+SUMMARY:💪 Kraft — Kraft Ganzkörper
+DESCRIPTION:Intensität: —\n\n• Kniebeuge 4×5\n• Kreuzheben 3×5\n• Klim
+ mzug 3×8\n• Rumpf 10′\n\nZiel: Kraft-Peak des Blocks.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:💪 Kraft — Kraft Ganzkörper
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-30-run-36210@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260630T173000
+DTEND;TZID=Europe/Berlin:20260630T184000
+SUMMARY:🏃 Lauf — Cruise-Intervalle Schwelle
+DESCRIPTION:Intensität: Z4\n\n• 15′ ein\n• 3×10′ @ Schwelle\, 3′ Trab\
+ n• 12′ aus\n\nZiel: Schwellen-Volumen.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🏃 Lauf — Cruise-Intervalle Schwelle
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-01-bike-49962@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260701T160000
+DTEND;TZID=Europe/Berlin:20260701T173000
+SUMMARY:🚴 Rad — Sweet-Spot lang
+DESCRIPTION:Intensität: Z3\n\n• 20′ ein\n• 3×12′ Sweet-Spot\, 5′ locke
+ r\n• 10′ aus\n\nZiel: Kraftausdauer-Peak.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🚴 Rad — Sweet-Spot lang
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-02-swim-40596@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260702T070000
+DTEND;TZID=Europe/Berlin:20260702T081000
+SUMMARY:🏊 Schwimmen — Ausdauer 2200 m
+DESCRIPTION:Intensität: Z2\n\n• 300 ein\n• 6×50 Drill\n• 8×150 @ CSS+4
+ s /20s\n• 200 locker\n• 200 aus\n\nZiel: Längste Schwimmeinheit.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🏊 Schwimmen — Ausdauer 2200 m
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-02-strength-3166@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260702T120000
+DTEND;TZID=Europe/Berlin:20260702T123500
+SUMMARY:💪 Kraft — Kraft Oberkörper leicht
+DESCRIPTION:Intensität: —\n\n• Zug-Zirkel 3 Runden\n• Band-Arbeit Schu
+ lter\n\nZiel: Erhalt\, gelenkschonend.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:💪 Kraft — Kraft Oberkörper leicht
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-03-run-86797@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260703T173000
+DTEND;TZID=Europe/Berlin:20260703T190500
+SUMMARY:🏃 Lauf — Langer Lauf mit Tempo-Block
+DESCRIPTION:Intensität: Z2–3\n\n• 60′ Z2\n• 20′ @ Tempo 4:30–4:45/km\n
+ • 15′ aus\n\nZiel: Durability + Renntempo-Toleranz.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🏃 Lauf — Langer Lauf mit Tempo-Block
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-04-bike-54948@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260704T160000
+DTEND;TZID=Europe/Berlin:20260704T194500
+SUMMARY:🚴 Rad — Long Ride — Renndistanz-Annäherung
+DESCRIPTION:Intensität: Z2\n\n• 3:45 h Z2\, alle 45′ 5′ leicht progres
+ siv\n• Komplette Race-Verpflegung üben\n\nZiel: 90-km-Spezifik.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🚴 Rad — Long Ride — Renndistanz-Annäherung
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-04-run-16869@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260704T173000
+DTEND;TZID=Europe/Berlin:20260704T175000
+SUMMARY:🏃 Lauf — Brick-Lauf
+DESCRIPTION:Intensität: Z3\n\n• 20′ vom Rad\, durchgehend Renntempo\n\
+ nZiel: Wechsel unter Ermüdung.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🏃 Lauf — Brick-Lauf
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-05-swim-25642@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260705T070000
+DTEND;TZID=Europe/Berlin:20260705T074500
+SUMMARY:🏊 Schwimmen — Technik-Recovery
+DESCRIPTION:Intensität: Z1\n\n• Drills + lockere 100er\n\nZiel: Freque
+ nz erhalten.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🏊 Schwimmen — Technik-Recovery
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-06-swim-30421@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260706T070000
+DTEND;TZID=Europe/Berlin:20260706T074000
+SUMMARY:🏊 Schwimmen — Lockere Technik
+DESCRIPTION:Intensität: Z1\n\n• Drills + 4×100 locker\n\nZiel: Erholun
+ g.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🏊 Schwimmen — Lockere Technik
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-07-run-32393@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260707T173000
+DTEND;TZID=Europe/Berlin:20260707T181500
+SUMMARY:🏃 Lauf — Kurze Schärfe
+DESCRIPTION:Intensität: Z4\n\n• 15′ ein\n• 5×1′ schnell /2′ Trab\n• 15
+ ′ aus\n\nZiel: Spritzigkeit ohne Last.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🏃 Lauf — Kurze Schärfe
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-08-bike-30302@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260708T160000
+DTEND;TZID=Europe/Berlin:20260708T170000
+SUMMARY:🚴 Rad — Lockeres Rollen
+DESCRIPTION:Intensität: Z2\n\n• 60′ Z2 entspannt\n\nZiel: Aktive Erhol
+ ung.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🚴 Rad — Lockeres Rollen
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-09-swim-7542@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260709T070000
+DTEND;TZID=Europe/Berlin:20260709T075000
+SUMMARY:🏊 Schwimmen — CSS Re-Test
+DESCRIPTION:Intensität: Test\n\n• Einschwimmen 400 m\n• 200 m all-out\
+ n• Pause\n• 400 m all-out\n• → neuen CSS notieren\n\nZiel: Fortschrit
+ t messen → Paces updaten.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🏊 Schwimmen — CSS Re-Test
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-09-strength-84190@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260709T120000
+DTEND;TZID=Europe/Berlin:20260709T123000
+SUMMARY:💪 Kraft — Kraft leicht
+DESCRIPTION:Intensität: —\n\n• Ganzkörper-Zirkel locker\n\nZiel: Erhal
+ t.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:💪 Kraft — Kraft leicht
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-10-run-71818@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260710T173000
+DTEND;TZID=Europe/Berlin:20260710T182000
+SUMMARY:🏃 Lauf — Lauf locker
+DESCRIPTION:Intensität: Z2\n\n• 50′ Z2 entspannt\n\nZiel: Aerob halten
+ .
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🏃 Lauf — Lauf locker
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-11-bike-61078@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260711T160000
+DTEND;TZID=Europe/Berlin:20260711T173000
+SUMMARY:🚴 Rad — Rad mittel + Brick
+DESCRIPTION:Intensität: Z2\n\n• 90′ Z2\n• 10′ Brick-Lauf locker\n\nZie
+ l: Frische Long-Annäherung.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:🚴 Rad — Rad mittel + Brick
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-12-rest-77260@tricoach
+DTSTAMP:20260610T183411Z
+DTSTART;TZID=Europe/Berlin:20260712T120000
+DTEND;TZID=Europe/Berlin:20260712T123000
+SUMMARY:😴 Ruhe — Ruhetag / Mobility
+DESCRIPTION:Intensität: Z1\n\n• Mobility\, Dehnen\, Spaziergang\n\nZie
+ l: Voll regenerieren vor Block 2.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:😴 Ruhe — Ruhetag / Mobility
+END:VALARM
+END:VEVENT
+END:VCALENDAR

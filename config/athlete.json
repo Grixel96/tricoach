@@ -1,0 +1,96 @@
+{
+  "athlete": {
+    "name": "Marvin Griegel",
+    "firstName": "Marvin",
+    "garminUserId": 117504366,
+    "birthDate": "1996-09-01",
+    "age": 29,
+    "sex": "male",
+    "weightKg": 84,
+    "heightCm": 186
+  },
+
+  "race": {
+    "name": "IRONMAN 70.3 Zell am See-Kaprun",
+    "shortName": "70.3 Zell am See",
+    "location": "Zell am See, Österreich",
+    "date": "2027-08-29",
+    "dateConfidence": "estimate",
+    "_dateNote": "Offizieller Termin 2027 noch nicht bestätigt. Ende August ist historisch. Anpassen sobald IRONMAN den Termin veröffentlicht.",
+    "discipline": "70.3",
+    "legs": { "swimKm": 1.9, "bikeKm": 90, "runKm": 21.1 },
+    "profile": "Schwimmen im Zeller See (Bergsee, ~18-20°C, Neopren wahrscheinlich). Rad welliges Alpenprofil mit ~1000 hm. Lauf flach am See.",
+    "goal": "Solides erstes/schnelles 70.3 als Baustein Richtung langfristigem Kona-Ziel. Schwimmen vom Limiter zur Waffe machen."
+  },
+
+  "physiology": {
+    "vo2maxRunning": 54,
+    "restingHr": 42,
+    "maxHr": 191,
+    "maxHrSource": "geschätzt (220-Alter=191, beobachtetes Max 187 beim Radfahren)",
+    "lactateThresholdHr": 167,
+    "hrvBaseline": 71,
+    "cyclingFtpWatts": null,
+    "_ftpNote": "TBD — via Garmin get_cycling_ftp ziehen oder 20-Min-Test.",
+    "swimCssPer100m": null,
+    "_cssNote": "TBD — KEIN Schwimm-Threshold vorhanden. Erster CSS-Test (400m + 200m all-out) liefert Wert. Bis dahin Schwimmen nach Gefühl/Technik."
+  },
+
+  "hrZones": {
+    "method": "Karvonen (HRR), HRmax 191 / RHR 42 / HRR 149",
+    "note": "Lauf-/Allgemein-HR. Rad-Zonen ~6-8 bpm niedriger an der Oberkante ansetzen.",
+    "zones": [
+      { "z": 1, "name": "Recovery / Kompensation", "pctHrr": "50-60", "bpm": "117-131" },
+      { "z": 2, "name": "Grundlage / Aerob (GA1)", "pctHrr": "60-70", "bpm": "131-146" },
+      { "z": 3, "name": "Tempo / GA2", "pctHrr": "70-80", "bpm": "146-161" },
+      { "z": 4, "name": "Schwelle / Threshold", "pctHrr": "80-90", "bpm": "161-176" },
+      { "z": 5, "name": "VO2max / Maximal", "pctHrr": "90-100", "bpm": "176-191" }
+    ]
+  },
+
+  "runPaceZones": {
+    "source": "Garmin Race-Predictor (10K 4:11/km, HM 4:27/km)",
+    "easyPerKm": "5:15-5:45",
+    "endurancePerKm": "4:55-5:20",
+    "tempoPerKm": "4:30-4:45",
+    "thresholdPerKm": "4:08-4:18",
+    "vo2PerKm": "3:50-4:05"
+  },
+
+  "availability": {
+    "trainingDays": ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"],
+    "preferredLongDays": ["Di", "Fr"],
+    "_longDaysSource": "Garmin preferredLongTrainingDays — ungewöhnlich (statt Wochenende). Respektiert; bei Bedarf umstellen.",
+    "weeklyHoursTarget": { "min": 12, "max": 16 },
+    "sessionsPerWeekTarget": { "swim": 3, "bike": 3, "run": 3, "strength": 2 }
+  },
+
+  "methodology": {
+    "philosophy": "Polarisiert 80/20 (Großteil locker Z1-Z2, gezielte harte Reize Z4-Z5). Long-Course-Schule im Geist von Laura Philipp / Kristian Blummenfelt: hohe aerobe Basis, Durability, Schwimm-Technik-Obsession, Brick-Spezifik, datengesteuerte Regeneration.",
+    "principles": [
+      "Schwimmen ist Priorität #1 — Limiter. 3x/Woche, Technik vor Umfang, erst CSS etablieren.",
+      "Rad als Stärke ausbauen: aerobe Long Rides + Schwellen-/VO2-Blöcke, Watt-gesteuert sobald FTP da.",
+      "Lauf ökonomisch halten + Durability (Laufen mit müden Beinen / Brick).",
+      "Konsistenz vor Heldentaten. Kein Junk-Mile-Mitteltempo.",
+      "Regeneration datengesteuert: Readiness/HRV/RHR entscheiden grün/gelb/rot.",
+      "Periodisierung in 3-Wochen-Belastung + 1 Woche Entlastung (3:1)."
+    ],
+    "intensityDistribution": { "easyZ1Z2": 0.8, "hardZ3Plus": 0.2 }
+  },
+
+  "readinessRules": {
+    "_doc": "Tägliche regelbasierte Anpassung der heutigen Einheit. Inputs aus Garmin-Morgen-Pull. Ampel entscheidet Modifikation.",
+    "green": {
+      "when": "Readiness >= 65 UND HRV im/über Baseline UND RHR <= Baseline+5 UND Schlaf >= 7h",
+      "action": "Plan wie vorgesehen ausführen. Quality-Einheiten freigegeben."
+    },
+    "amber": {
+      "when": "Readiness 40-64 ODER HRV unter Baseline ODER RHR Baseline+6..+8 ODER Schlaf 5-7h",
+      "action": "Intensität raus: harte Einheit → Z2-Dauer; Intervalle kürzen ~30%; Long Session Dauer -20%."
+    },
+    "red": {
+      "when": "Readiness < 40 ODER RHR > Baseline+8 ODER HRV stark unter Baseline ODER Schlaf < 5h ODER Krankheitszeichen",
+      "action": "Ruhetag oder lockere Regeneration Z1 max 30-40 min. Kein Quality."
+    }
+  }
+}

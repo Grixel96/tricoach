@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Backups / temp
+app/data.bak.json
+*.bak.json
+
+# Secrets — niemals committen
+*token*.json
+.garminconnect/
+.env

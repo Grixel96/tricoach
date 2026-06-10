@@ -1,0 +1,14 @@
+{
+  "name": "TriCoach — Marvin",
+  "short_name": "TriCoach",
+  "description": "KI-Triathlon-Coach: Garmin-Health, Tagesform & Plan Richtung 70.3 Zell am See.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0d12",
+  "theme_color": "#0a0d12",
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

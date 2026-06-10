@@ -1,0 +1,168 @@
+{
+  "block": "Grundlagenphase 1 — Block 1",
+  "phase": "Base",
+  "blockStart": "2026-06-15",
+  "blockEnd": "2026-07-12",
+  "loadPattern": "3:1",
+  "weeklyTargetHours": [12, 13.5, 15, 9],
+  "focus": "Schwimmen von 0 aufbauen (CSS etablieren), aerobe Basis Rad/Lauf, Bewegungsqualität.",
+  "cssNote": "Schwimm-Paces relativ zu CSS (aus Test 10.06). Sobald CSS-Sekunden bekannt, ersetzt der Job 'CSS' durch konkrete 100m-Zeiten.",
+  "defaultTimes": { "swim": "07:00", "bike": "16:00", "run": "17:30", "strength": "12:00" },
+
+  "weeks": [
+    {
+      "weekStart": "2026-06-15",
+      "label": "Build 1",
+      "targetHours": 12,
+      "days": [
+        { "date": "2026-06-15", "day": "Mo", "sessions": [
+          { "discipline": "swim", "title": "Technik & Wassergefühl", "duration": 55, "intensity": "Z1–2",
+            "structure": ["300 m einschwimmen locker","6×50 m Drills (Catch-up / Fingertip-Drag) /20s P","8×50 m @ CSS+5s /15s P","100 m Beine mit Brett","200 m ausschwimmen"],
+            "purpose": "Frequenz + Technik. Sauber statt schnell." },
+          { "discipline": "strength", "title": "Kraft Unterkörper + Rumpf", "duration": 45, "intensity": "—",
+            "structure": ["Kniebeuge 3×8","Ausfallschritte 3×10/Bein","Hip Thrust 3×10","Plank 3×45s + Side-Plank","Wadenheben 3×15"],
+            "purpose": "Verletzungsschutz, Antrieb fürs Rad." } ] },
+
+        { "date": "2026-06-16", "day": "Di", "sessions": [
+          { "discipline": "run", "title": "Schwellenlauf", "duration": 65, "intensity": "Z4-Kern",
+            "structure": ["15′ einlaufen Z1–2","4×6′ @ Schwelle 4:08–4:18/km (HR 161–176), 2′ Trab dazwischen","12′ auslaufen Z1"],
+            "purpose": "Laktatschwelle anheben. Ökonomie halten." } ] },
+
+        { "date": "2026-06-17", "day": "Mi", "sessions": [
+          { "discipline": "bike", "title": "Sweet-Spot Endurance", "duration": 80, "intensity": "Z2–3",
+            "structure": ["20′ einrollen Z2","3×10′ Sweet-Spot (HR ~150–160, RPE 7), 5′ locker dazwischen","Rest Z2","10′ ausrollen"],
+            "purpose": "Aerobe Kraftausdauer ohne Ermüdungsspitze." } ] },
+
+        { "date": "2026-06-18", "day": "Do", "sessions": [
+          { "discipline": "swim", "title": "Ausdauer-Set", "duration": 60, "intensity": "Z2",
+            "structure": ["300 m einschwimmen","4×50 m Drill /15s P","5×150 m @ CSS+5s /20s P","100 m locker","200 m ausschwimmen"],
+            "purpose": "Kontinuität bis 1500 m+ aufbauen." },
+          { "discipline": "strength", "title": "Kraft Oberkörper + Zug", "duration": 40, "intensity": "—",
+            "structure": ["Klimmzüge/Latzug 3×8","Rudern 3×10","Schulterdrücken 3×10","Pull-Apart Band 3×15","Anti-Rotation Pallof 3×12"],
+            "purpose": "Zugmuskulatur fürs Schwimmen." } ] },
+
+        { "date": "2026-06-19", "day": "Fr", "sessions": [
+          { "discipline": "run", "title": "Langer Lauf locker", "duration": 80, "intensity": "Z2",
+            "structure": ["80′ durchgehend Z2 (HR 131–146, 4:55–5:20/km)","Letzte 10′ leicht progressiv","Strikt aerob — nicht schneller werden lassen"],
+            "purpose": "Aerobe Basis + Durability." } ] },
+
+        { "date": "2026-06-20", "day": "Sa", "sessions": [
+          { "discipline": "bike", "title": "Long Ride aerob", "duration": 180, "intensity": "Z2",
+            "structure": ["3 h gleichmäßig Z2 (HR 131–146)","Alle 30′ kurz aus dem Sattel","Verpflegung üben: 60 g Kohlenhydrate/h, trinken"],
+            "purpose": "Renndistanz-Ökonomie, Fettstoffwechsel, Fueling." },
+          { "discipline": "run", "title": "Brick-Lauf", "duration": 15, "intensity": "Z2–3",
+            "structure": ["Direkt vom Rad","15′ einlaufen ins Renngefühl, letzte 5′ Renntempo (~4:40/km)"],
+            "purpose": "Wechsel Rad→Lauf, müde Beine." } ] },
+
+        { "date": "2026-06-21", "day": "So", "sessions": [
+          { "discipline": "swim", "title": "Technik-Recovery", "duration": 45, "intensity": "Z1",
+            "structure": ["200 m locker","8×50 m Drills, Fokus hohe Ellbogen","4×100 m @ CSS+8s ganz locker","150 m ausschwimmen"],
+            "purpose": "3. Schwimmreiz/Woche, lockeres Wassergefühl." } ] }
+      ]
+    },
+
+    {
+      "weekStart": "2026-06-22",
+      "label": "Build 2",
+      "targetHours": 13.5,
+      "progression": "Umfang +10 %. Schwimm-Sets länger, Lauf-Long +10′, Rad-Long +20′.",
+      "days": [
+        { "date": "2026-06-22", "day": "Mo", "sessions": [
+          { "discipline": "swim", "title": "Technik & CSS-Snack", "duration": 60, "intensity": "Z1–2",
+            "structure": ["400 m einschwimmen","6×50 m Drills","10×50 m @ CSS+3s /15s P","200 m ausschwimmen"], "purpose": "Frequenz + leichte Intensität." },
+          { "discipline": "strength", "title": "Kraft Unterkörper", "duration": 45, "intensity": "—",
+            "structure": ["Kniebeuge 4×6 (schwerer)","Bulgarian Split Squat 3×8/Bein","Hip Thrust 3×10","Rumpf-Zirkel 10′"], "purpose": "Maximalkraft-Tendenz." } ] },
+        { "date": "2026-06-23", "day": "Di", "sessions": [
+          { "discipline": "run", "title": "VO₂-Intervalle", "duration": 65, "intensity": "Z5",
+            "structure": ["15′ ein","6×3′ @ 3:50–4:05/km (HR 176+), 2:30 Trab","12′ aus"], "purpose": "VO₂max-Reiz." } ] },
+        { "date": "2026-06-24", "day": "Mi", "sessions": [
+          { "discipline": "bike", "title": "Endurance + Sweet-Spot", "duration": 85, "intensity": "Z2–3",
+            "structure": ["20′ ein","2×15′ Sweet-Spot, 6′ locker","Rest Z2","10′ aus"], "purpose": "Kraftausdauer." } ] },
+        { "date": "2026-06-25", "day": "Do", "sessions": [
+          { "discipline": "swim", "title": "Ausdauer-Set lang", "duration": 65, "intensity": "Z2",
+            "structure": ["300 m ein","6×50 m Drill","6×150 m @ CSS+4s /20s P","200 m aus"], "purpose": "Kontinuität 1800 m+." },
+          { "discipline": "strength", "title": "Kraft Oberkörper", "duration": 40, "intensity": "—",
+            "structure": ["Latzug 4×8","Rudern 3×10","Schulterdrücken 3×10","Pallof 3×12"], "purpose": "Zugkraft Schwimmen." } ] },
+        { "date": "2026-06-26", "day": "Fr", "sessions": [
+          { "discipline": "run", "title": "Langer Lauf", "duration": 90, "intensity": "Z2",
+            "structure": ["90′ Z2","letzte 15′ progressiv bis Tempo"], "purpose": "Aerobe Basis." } ] },
+        { "date": "2026-06-27", "day": "Sa", "sessions": [
+          { "discipline": "bike", "title": "Long Ride aerob", "duration": 200, "intensity": "Z2",
+            "structure": ["3:20 h Z2","Fueling 60–80 g KH/h","welliges Profil suchen (Zell-Vorbereitung)"], "purpose": "Distanz-Durability." },
+          { "discipline": "run", "title": "Brick-Lauf", "duration": 20, "intensity": "Z2–3",
+            "structure": ["20′ vom Rad, letzte 8′ Renntempo"], "purpose": "Wechselspezifik." } ] },
+        { "date": "2026-06-28", "day": "So", "sessions": [
+          { "discipline": "swim", "title": "Technik-Recovery", "duration": 45, "intensity": "Z1",
+            "structure": ["8×50 Drills","6×100 @ CSS+8s locker","Beine + ausschwimmen"], "purpose": "3. Reiz." } ] }
+      ]
+    },
+
+    {
+      "weekStart": "2026-06-29",
+      "label": "Build 3 (Block-Peak)",
+      "targetHours": 15,
+      "progression": "Höchster Umfang. Rad-Long 3:45 + 20′ Brick, Schwimm 2200 m, Lauf-Long 95′.",
+      "days": [
+        { "date": "2026-06-29", "day": "Mo", "sessions": [
+          { "discipline": "swim", "title": "Technik + CSS-Set", "duration": 65, "intensity": "Z1–3",
+            "structure": ["400 m ein","8×50 Drills","12×50 @ CSS /15s P","6×25 schnell","200 aus"], "purpose": "Technik unter leichtem Tempo." },
+          { "discipline": "strength", "title": "Kraft Ganzkörper", "duration": 45, "intensity": "—",
+            "structure": ["Kniebeuge 4×5","Kreuzheben 3×5","Klimmzug 3×8","Rumpf 10′"], "purpose": "Kraft-Peak des Blocks." } ] },
+        { "date": "2026-06-30", "day": "Di", "sessions": [
+          { "discipline": "run", "title": "Cruise-Intervalle Schwelle", "duration": 70, "intensity": "Z4",
+            "structure": ["15′ ein","3×10′ @ Schwelle, 3′ Trab","12′ aus"], "purpose": "Schwellen-Volumen." } ] },
+        { "date": "2026-07-01", "day": "Mi", "sessions": [
+          { "discipline": "bike", "title": "Sweet-Spot lang", "duration": 90, "intensity": "Z3",
+            "structure": ["20′ ein","3×12′ Sweet-Spot, 5′ locker","10′ aus"], "purpose": "Kraftausdauer-Peak." } ] },
+        { "date": "2026-07-02", "day": "Do", "sessions": [
+          { "discipline": "swim", "title": "Ausdauer 2200 m", "duration": 70, "intensity": "Z2",
+            "structure": ["300 ein","6×50 Drill","8×150 @ CSS+4s /20s","200 locker","200 aus"], "purpose": "Längste Schwimmeinheit." },
+          { "discipline": "strength", "title": "Kraft Oberkörper leicht", "duration": 35, "intensity": "—",
+            "structure": ["Zug-Zirkel 3 Runden","Band-Arbeit Schulter"], "purpose": "Erhalt, gelenkschonend." } ] },
+        { "date": "2026-07-03", "day": "Fr", "sessions": [
+          { "discipline": "run", "title": "Langer Lauf mit Tempo-Block", "duration": 95, "intensity": "Z2–3",
+            "structure": ["60′ Z2","20′ @ Tempo 4:30–4:45/km","15′ aus"], "purpose": "Durability + Renntempo-Toleranz." } ] },
+        { "date": "2026-07-04", "day": "Sa", "sessions": [
+          { "discipline": "bike", "title": "Long Ride — Renndistanz-Annäherung", "duration": 225, "intensity": "Z2",
+            "structure": ["3:45 h Z2, alle 45′ 5′ leicht progressiv","Komplette Race-Verpflegung üben"], "purpose": "90-km-Spezifik." },
+          { "discipline": "run", "title": "Brick-Lauf", "duration": 20, "intensity": "Z3",
+            "structure": ["20′ vom Rad, durchgehend Renntempo"], "purpose": "Wechsel unter Ermüdung." } ] },
+        { "date": "2026-07-05", "day": "So", "sessions": [
+          { "discipline": "swim", "title": "Technik-Recovery", "duration": 45, "intensity": "Z1",
+            "structure": ["Drills + lockere 100er"], "purpose": "Frequenz erhalten." } ] }
+      ]
+    },
+
+    {
+      "weekStart": "2026-07-06",
+      "label": "Entlastung (Deload)",
+      "targetHours": 9,
+      "progression": "−40 % Volumen. Intensität kurz antippen, Re-Tests. Körper adaptiert.",
+      "days": [
+        { "date": "2026-07-06", "day": "Mo", "sessions": [
+          { "discipline": "swim", "title": "Lockere Technik", "duration": 40, "intensity": "Z1",
+            "structure": ["Drills + 4×100 locker"], "purpose": "Erholung." } ] },
+        { "date": "2026-07-07", "day": "Di", "sessions": [
+          { "discipline": "run", "title": "Kurze Schärfe", "duration": 45, "intensity": "Z4",
+            "structure": ["15′ ein","5×1′ schnell /2′ Trab","15′ aus"], "purpose": "Spritzigkeit ohne Last." } ] },
+        { "date": "2026-07-08", "day": "Mi", "sessions": [
+          { "discipline": "bike", "title": "Lockeres Rollen", "duration": 60, "intensity": "Z2",
+            "structure": ["60′ Z2 entspannt"], "purpose": "Aktive Erholung." } ] },
+        { "date": "2026-07-09", "day": "Do", "sessions": [
+          { "discipline": "swim", "title": "CSS Re-Test", "duration": 50, "intensity": "Test",
+            "structure": ["Einschwimmen 400 m","200 m all-out","Pause","400 m all-out","→ neuen CSS notieren"], "purpose": "Fortschritt messen → Paces updaten." },
+          { "discipline": "strength", "title": "Kraft leicht", "duration": 30, "intensity": "—",
+            "structure": ["Ganzkörper-Zirkel locker"], "purpose": "Erhalt." } ] },
+        { "date": "2026-07-10", "day": "Fr", "sessions": [
+          { "discipline": "run", "title": "Lauf locker", "duration": 50, "intensity": "Z2",
+            "structure": ["50′ Z2 entspannt"], "purpose": "Aerob halten." } ] },
+        { "date": "2026-07-11", "day": "Sa", "sessions": [
+          { "discipline": "bike", "title": "Rad mittel + Brick", "duration": 90, "intensity": "Z2",
+            "structure": ["90′ Z2","10′ Brick-Lauf locker"], "purpose": "Frische Long-Annäherung." } ] },
+        { "date": "2026-07-12", "day": "So", "sessions": [
+          { "discipline": "rest", "title": "Ruhetag / Mobility", "duration": 30, "intensity": "Z1",
+            "structure": ["Mobility, Dehnen, Spaziergang"], "purpose": "Voll regenerieren vor Block 2." } ] }
+      ]
+    }
+  ]
+}

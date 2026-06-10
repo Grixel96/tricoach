@@ -1,0 +1,104 @@
+{
+  "generatedAt": "2026-06-10T06:45:00+02:00",
+  "source": "Garmin Connect (Marvin Griegel)",
+  "athlete": { "firstName": "Marvin", "age": 29 },
+
+  "race": {
+    "name": "IRONMAN 70.3 Zell am See",
+    "location": "Zell am See, AT",
+    "date": "2027-08-29",
+    "distanceLabel": "1,9 / 90 / 21,1 km",
+    "daysToGo": 445,
+    "weeksToGo": 63
+  },
+
+  "phase": {
+    "block": "Grundlagenphase 1",
+    "macro": "Aerobe Basis + Schwimm-Technik",
+    "weekIndex": 1,
+    "totalWeeks": 63,
+    "blockProgress": 0.02
+  },
+
+  "readiness": {
+    "score": 75,
+    "level": "HIGH",
+    "label": "Bestens erholt",
+    "verdict": "green",
+    "recoveryTimeHours": 8.9,
+    "message": "Readiness 75 — grünes Licht. HRV stark, Erholung gut. Quality heute freigegeben."
+  },
+
+  "today": {
+    "date": "2026-06-10",
+    "weekday": "Mittwoch",
+    "discipline": "swim",
+    "title": "Schwimmen — CSS Baseline-Test",
+    "duration": "60 min",
+    "loadLabel": "moderat",
+    "adjustment": "Keine Anpassung — Readiness grün (75). Plan wie vorgesehen.",
+    "status": "as_planned",
+    "structure": [
+      "400 m Einschwimmen locker, Technik-Fokus",
+      "4×50 m Drills (Catch-up, Fingertip-Drag) / 20 s P",
+      "200 m all-out auf Zeit ⟶ notieren",
+      "200 m locker",
+      "400 m all-out auf Zeit ⟶ notieren",
+      "200 m Ausschwimmen"
+    ],
+    "coachNote": "Wir haben noch keinen Schwimm-Threshold — das ist deine größte Baustelle fürs 70.3. CSS = (400m-Zeit − 200m-Zeit) / 2 pro 100m. Damit steuern wir ab jetzt jede Schwimmeinheit. Sauber, nicht verkrampfen — Technik schlägt Kraft im Wasser."
+  },
+
+  "vitals": {
+    "hrv":         { "value": 71, "unit": "ms",  "status": "very_good", "baseline": 71, "trendIcon": "→", "label": "Sehr gut" },
+    "rhr":         { "value": 42, "unit": "bpm", "status": "good",      "baseline": 44, "trendIcon": "↓", "label": "Top" },
+    "bodyBattery": { "value": 59, "unit": "",    "status": "high",      "high": 59, "low": 38, "trendIcon": "↑", "label": "Geladen" },
+    "sleep":       { "value": 9.6, "unit": "h",  "status": "very_good", "trendIcon": "→", "label": "Erholsam" },
+    "stress":      { "value": 17, "unit": "",    "status": "low",       "trendIcon": "→", "label": "Niedrig" },
+    "vo2max":      { "value": 54, "unit": "",     "status": "up",        "baseline": 51, "trendIcon": "↑", "label": "+3 seit Apr" }
+  },
+
+  "racePredictions": [
+    { "dist": "5K",  "time": "19:37" },
+    { "dist": "10K", "time": "41:49" },
+    { "dist": "HM",  "time": "1:33:50" },
+    { "dist": "M",   "time": "3:27:15" }
+  ],
+
+  "vo2maxTrend": [
+    { "date": "2026-04-01", "v": 51 },
+    { "date": "2026-04-10", "v": 52 },
+    { "date": "2026-04-13", "v": 53 },
+    { "date": "2026-04-21", "v": 54 },
+    { "date": "2026-05-09", "v": 55 },
+    { "date": "2026-05-17", "v": 54 },
+    { "date": "2026-05-19", "v": 55 },
+    { "date": "2026-05-24", "v": 54 }
+  ],
+
+  "week": [
+    { "day": "Mo", "date": "2026-06-08", "discipline": "run",      "label": "Lauf Basis 10 km", "status": "done" },
+    { "day": "Di", "date": "2026-06-09", "discipline": "strength", "label": "Krafttraining",     "status": "done" },
+    { "day": "Mi", "date": "2026-06-10", "discipline": "swim",     "label": "Schwimm CSS-Test",  "status": "today" },
+    { "day": "Do", "date": "2026-06-11", "discipline": "bike",     "label": "Rad GA1 90'",       "status": "planned" },
+    { "day": "Fr", "date": "2026-06-12", "discipline": "run",      "label": "Lauf Intervalle",   "status": "planned" },
+    { "day": "Sa", "date": "2026-06-13", "discipline": "bike",     "label": "Long Ride 3 h",     "status": "planned" },
+    { "day": "So", "date": "2026-06-14", "discipline": "swim",     "label": "Technik + Lauf-Brick", "status": "planned" }
+  ],
+
+  "recentActivities": [
+    { "date": "2026-06-09", "discipline": "strength", "name": "Krafttraining",     "detail": "56 min · Ø104 bpm" },
+    { "date": "2026-06-08", "discipline": "run",      "name": "Bochum Basis",      "detail": "10,0 km · 52:37 · Ø153 bpm" },
+    { "date": "2026-06-07", "discipline": "bike",     "name": "Recklinghausen",    "detail": "63,5 km · 2:13 · Ø136 bpm" },
+    { "date": "2026-06-06", "discipline": "bike",     "name": "Recklinghausen",    "detail": "77,4 km · 2:28 · Ø162 bpm" },
+    { "date": "2026-06-04", "discipline": "run",      "name": "Recklinghausen",    "detail": "8,9 km · 47:00 · Ø154 bpm" }
+  ],
+
+  "weekSummary": {
+    "hours": 0,
+    "swimKm": 0,
+    "bikeKm": 0,
+    "runKm": 0,
+    "note": "Letzte 7 Tage stark Rad-/Lauflastig, 0 km Schwimmen — ab heute drehen wir das."
+  }
+}
