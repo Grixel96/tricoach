@@ -1,7 +1,8 @@
 name: TriCoach Daily Update
 
 # Autonomer Morgen-Job: zieht Garmin-Health, passt heutige Einheit an Tagesform an,
-# schreibt app/data.json + app/plan.ics, committet. Läuft auch wenn der PC aus ist.
+# schreibt app/data.json + app/plan.ics, committet UND deployt direkt auf Pages.
+# Läuft auch wenn der PC aus ist.
 
 on:
   schedule:
@@ -11,9 +12,19 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+# Nur ein Pages-Deploy gleichzeitig.
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   update:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -41,3 +52,16 @@ jobs:
             git commit -m "chore: tägliches Health-Update $(date -u +%F)"
             git push
           fi
+
+      # Live-App nach dem Update direkt neu veröffentlichen (Bot-Push triggert
+      # keinen separaten Workflow, darum hier im selben Job deployen).
+      - uses: actions/configure-pages@v5
+
+      - name: Upload app/ als Pages-Artefakt
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./app
+
+      - name: Deploy to Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
