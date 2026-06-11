@@ -51,7 +51,7 @@ function render(d) {
     today(d),
     `<div class="section-title">Tagesform</div>`,
     vitals(d),
-    `<div class="section-title">Deine Woche</div>`,
+    `<div class="section-title">${d.weekMeta && d.weekMeta.isUpcoming ? "Kommende Trainingswoche" : "Deine Woche"}</div>`,
     weekStrip(d),
     `<div class="section-title">Form & Prognose</div>`,
     form(d),
@@ -171,6 +171,14 @@ function vitals(d) {
 }
 
 function weekStrip(d) {
+  const meta = d.weekMeta || {};
+  const totalMin = d.week.reduce((a, w) => a + (w.totalMinutes || 0), 0);
+  const hrs = (totalMin / 60);
+  const head = (meta.label || meta.targetHours)
+    ? `<div class="week-head">
+         <div class="wh-l">${meta.label || "Woche"}${meta.weekStart ? ` · ab ${shortDate(meta.weekStart)}` : ""}</div>
+         <div class="wh-r">${totalMin ? `${hrs.toFixed(1)} h geplant` : ""}</div>
+       </div>` : "";
   const cells = d.week.map((w, i) => {
     const di = DISC[w.discipline] || DISC.rest;
     const mark = w.status === "done" ? "✓" : di.icon;
@@ -178,28 +186,66 @@ function weekStrip(d) {
     <div class="wday ${w.status}" data-disc="${w.discipline}" data-i="${i}">
       <div class="wd">${w.day}</div>
       <div class="wdot">${mark}</div>
+      <div class="wmin">${w.totalMinutes ? w.totalMinutes + "′" : "–"}</div>
     </div>`;
   }).join("");
   return `
   <section class="card">
+    ${head}
     <div class="week">${cells}</div>
     <div class="week-detail" id="weekDetail"></div>
   </section>`;
 }
 
+function dayDetail(w) {
+  const dayName = { Mo:"Montag", Di:"Dienstag", Mi:"Mittwoch", Do:"Donnerstag", Fr:"Freitag", Sa:"Samstag", So:"Sonntag" }[w.day] || w.day;
+  const st = w.status === "done" ? `<span class="wd-state done">erledigt ✓</span>`
+           : w.status === "today" ? `<span class="wd-state today">heute</span>` : "";
+  if (!w.sessions || !w.sessions.length) {
+    return `
+    <div class="wd-head"><h4>${dayName}, ${shortDate(w.date)}</h4>${st}</div>
+    <div class="wd-rest">😴 Ruhetag — Erholung ist Teil des Plans.</div>`;
+  }
+  const blocks = w.sessions.map(s => {
+    const di = DISC[s.discipline] || DISC.rest;
+    const steps = (s.structure || []).map(x => `<li>${x}</li>`).join("");
+    return `
+    <div class="wd-sess" data-disc="${s.discipline}">
+      <div class="wd-stripe"></div>
+      <div class="wd-sess-in">
+        <div class="wd-sess-head">
+          <span class="wd-ic">${di.icon}</span>
+          <span class="wd-title">${s.title}</span>
+        </div>
+        <div class="wd-chips">
+          <span class="chip accent">${di.name}</span>
+          <span class="chip">⏱ ${s.duration} min</span>
+          <span class="chip">${s.intensity}</span>
+        </div>
+        ${steps ? `<ul class="structure">${steps}</ul>` : ""}
+        ${s.purpose ? `<div class="wd-purpose"><span class="who">Ziel</span>${s.purpose}</div>` : ""}
+      </div>
+    </div>`;
+  }).join("");
+  return `
+  <div class="wd-head"><h4>${dayName}, ${shortDate(w.date)}</h4>${st}</div>
+  ${blocks}`;
+}
+
 function bindWeek(d) {
   const detail = $("#weekDetail");
   const show = (i) => {
-    const w = d.week[i];
-    const di = DISC[w.discipline] || DISC.rest;
-    const st = w.status === "done" ? "erledigt ✓" : w.status === "today" ? "heute" : "geplant";
-    detail.innerHTML = `${di.icon} <b>${w.label}</b> · ${st}`;
+    detail.innerHTML = dayDetail(d.week[i]);
+    document.querySelectorAll(".wday").forEach(el =>
+      el.classList.toggle("sel", +el.dataset.i === i));
   };
   document.querySelectorAll(".wday").forEach(el => {
     el.addEventListener("click", () => show(+el.dataset.i));
   });
-  const todayIdx = d.week.findIndex(w => w.status === "today");
-  show(todayIdx >= 0 ? todayIdx : 0);
+  // Standard: heute, sonst erster Tag mit Training, sonst Tag 0
+  let idx = d.week.findIndex(w => w.status === "today");
+  if (idx < 0) idx = d.week.findIndex(w => w.sessions && w.sessions.length);
+  show(idx >= 0 ? idx : 0);
 }
 
 function form(d) {

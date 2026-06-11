@@ -153,17 +153,38 @@ body {
 .sdot.s-low_bad, .sdot.s-red, .sdot.s-down { background: var(--red); }
 
 /* ---------- Week strip ---------- */
+.week-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; }
+.week-head .wh-l { font-size: 14px; font-weight: 800; color: var(--text); letter-spacing: -0.01em; }
+.week-head .wh-r { font-size: 12px; font-weight: 700; color: var(--text-dim); font-variant-numeric: tabular-nums; }
 .week { display: grid; grid-template-columns: repeat(7, 1fr); gap: 7px; }
-.wday { display: flex; flex-direction: column; align-items: center; gap: 7px; padding: 10px 4px; border-radius: var(--radius-sm); background: var(--surface); border: 1px solid var(--border-soft); cursor: pointer; transition: transform .12s, border-color .2s; }
+.wday { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 9px 3px; border-radius: var(--radius-sm); background: var(--surface); border: 1px solid var(--border-soft); cursor: pointer; transition: transform .12s, border-color .2s; }
 .wday:active { transform: scale(0.95); }
-.wday.is-today { border-color: var(--disc-col); background: color-mix(in srgb, var(--disc-col) 10%, var(--surface)); }
+.wday.today, .wday.sel { border-color: var(--disc-col); background: color-mix(in srgb, var(--disc-col) 12%, var(--surface)); }
 .wday .wd { font-size: 11px; font-weight: 700; color: var(--text-faint); }
-.wday.is-today .wd { color: var(--text); }
+.wday.today .wd, .wday.sel .wd { color: var(--text); }
 .wday .wdot { width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; background: color-mix(in srgb, var(--disc-col) 20%, transparent); border: 1.5px solid var(--disc-col); color: var(--disc-col); }
 .wday.done .wdot { background: var(--disc-col); color: #0a0d12; }
-.wday.planned .wdot { opacity: 0.55; }
-.week-detail { margin-top: 12px; font-size: 13px; color: var(--text-dim); text-align: center; min-height: 20px; }
-.week-detail b { color: var(--text); font-weight: 700; }
+.wday.planned .wdot { opacity: 0.7; }
+.wday .wmin { font-size: 9.5px; font-weight: 700; color: var(--text-faint); font-variant-numeric: tabular-nums; }
+
+/* ---------- Week day detail ---------- */
+.week-detail { margin-top: 14px; }
+.wd-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 12px; padding-top: 12px; border-top: 1px solid var(--border-soft); }
+.wd-head h4 { font-size: 15px; font-weight: 800; color: var(--text); letter-spacing: -0.01em; }
+.wd-state { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 3px 8px; border-radius: 999px; }
+.wd-state.today { color: var(--green); background: color-mix(in srgb, var(--green) 15%, transparent); }
+.wd-state.done { color: var(--text-dim); background: var(--surface-2); }
+.wd-rest { font-size: 13.5px; color: var(--text-dim); padding: 4px 2px 6px; }
+.wd-sess { display: flex; gap: 0; background: var(--surface-2); border: 1px solid var(--border-soft); border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 10px; }
+.wd-stripe { flex: 0 0 4px; background: var(--disc-col); }
+.wd-sess-in { padding: 13px 14px; flex: 1; min-width: 0; }
+.wd-sess-head { display: flex; align-items: center; gap: 8px; margin-bottom: 9px; }
+.wd-ic { font-size: 17px; }
+.wd-title { font-size: 15px; font-weight: 800; color: var(--text); letter-spacing: -0.01em; }
+.wd-chips { display: flex; gap: 7px; flex-wrap: wrap; margin-bottom: 11px; }
+.wd-sess .structure { margin: 0 0 10px; }
+.wd-purpose { font-size: 12.5px; color: var(--text-dim); background: var(--surface); border-left: 3px solid var(--disc-col); border-radius: 0 10px 10px 0; padding: 9px 12px; line-height: 1.5; }
+.wd-purpose .who { display: block; font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--disc-col); margin-bottom: 4px; }
 
 /* ---------- Form / Trend ---------- */
 .form-row { display: flex; gap: 14px; align-items: stretch; }

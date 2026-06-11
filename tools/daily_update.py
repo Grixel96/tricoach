@@ -205,11 +205,22 @@ def build_week_strip(days, today_iso):
     short = {"Mo": "Mo", "Di": "Di", "Mi": "Mi", "Do": "Do", "Fr": "Fr", "Sa": "Sa", "So": "So"}
     out = []
     for d in days:
-        disc = d["sessions"][0]["discipline"] if d.get("sessions") else "rest"
-        label = d["sessions"][0]["title"] if d.get("sessions") else "Ruhe"
+        sess = d.get("sessions") or []
+        disc = sess[0]["discipline"] if sess else "rest"
+        label = sess[0]["title"] if sess else "Ruhe"
         st = "today" if d["date"] == today_iso else ("done" if d["date"] < today_iso else "planned")
+        total = sum(s.get("duration", 0) for s in sess)
+        sessions = [{
+            "discipline": s["discipline"],
+            "title": s["title"],
+            "duration": s.get("duration", 0),
+            "intensity": s.get("intensity", "—"),
+            "structure": s.get("structure", []),
+            "purpose": s.get("purpose", ""),
+        } for s in sess]
         out.append({"day": short.get(d["day"], d["day"]), "date": d["date"],
-                    "discipline": disc, "label": label, "status": st})
+                    "discipline": disc, "label": label, "status": st,
+                    "totalMinutes": total, "sessions": sessions})
     return out
 
 
@@ -273,6 +284,12 @@ def build_data(m):
         },
         "racePredictions": format_predictions(m.get("racePredictions")),
         "vo2maxTrend": load_prev_trend(vo2),
+        "weekMeta": {
+            "label": week.get("label", "") if week else "",
+            "weekStart": week.get("weekStart", "") if week else "",
+            "targetHours": week.get("targetHours") if week else None,
+            "isUpcoming": bool(week) and (not today_day),
+        },
         "week": build_week_strip(days, TODAY) if days else [],
         "recentActivities": map_activities(m.get("activities", [])),
         "weekSummary": {"note": f"Tagesform {v.upper()} · Readiness {score}."},
