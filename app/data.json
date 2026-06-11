@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T07:15:00+02:00",
+  "generatedAt": "2026-06-11T07:17:00+02:00",
   "source": "Garmin Connect (Marvin Griegel)",
   "athlete": {
     "firstName": "Marvin",
@@ -61,7 +61,7 @@
       "label": "Ruhepuls"
     },
     "bodyBattery": {
-      "value": 98,
+      "value": 97,
       "unit": "",
       "status": "high",
       "high": 100,
@@ -77,7 +77,7 @@
       "label": "Schlaf"
     },
     "stress": {
-      "value": 9,
+      "value": 10,
       "unit": "",
       "status": "low",
       "trendIcon": "→",
