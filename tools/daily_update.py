@@ -293,8 +293,30 @@ def build_data(m):
         "week": build_week_strip(days, TODAY) if days else [],
         "recentActivities": map_activities(m.get("activities", [])),
         "weekSummary": {"note": f"Tagesform {v.upper()} · Readiness {score}."},
+        "profile": build_profile(),
     }
     return data, v
+
+
+def build_profile():
+    a, phys, race = CONFIG["athlete"], CONFIG["physiology"], CONFIG["race"]
+    avail = CONFIG.get("availability", {})
+    meth = CONFIG.get("methodology", {})
+    return {
+        "name": a["name"], "age": a["age"], "sex": a["sex"],
+        "weightKg": a.get("weightKg"), "heightCm": a.get("heightCm"),
+        "race": {"name": race["name"], "location": race["location"], "date": race["date"],
+                 "goal": race.get("goal", "")},
+        "physiology": {
+            "vo2maxRunning": phys.get("vo2maxRunning"), "restingHr": phys.get("restingHr"),
+            "maxHr": phys.get("maxHr"), "lactateThresholdHr": phys.get("lactateThresholdHr"),
+            "hrvBaseline": phys.get("hrvBaseline"),
+            "cyclingFtpWatts": phys.get("cyclingFtpWatts"), "swimCssPer100m": phys.get("swimCssPer100m"),
+        },
+        "weeklyHours": avail.get("weeklyHoursTarget", {}),
+        "sessionsPerWeek": avail.get("sessionsPerWeekTarget", {}),
+        "philosophy": meth.get("philosophy", ""),
+    }
 
 
 def format_predictions(rp):
@@ -337,6 +359,36 @@ def main():
     with open(os.path.join(APP, "data.json"), "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     print(f"  data.json geschrieben — Ampel {v.upper()}, Readiness {data['readiness']['score']}")
+
+    # history.json fortschreiben (Tagesverlauf + TSS/CTL/ATL/TSB)
+    try:
+        from metrics import update_history
+    except ImportError:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        from metrics import update_history
+    vit = data["vitals"]
+    vitals_raw = {
+        "readiness": data["readiness"]["score"],
+        "hrv": vit["hrv"]["value"], "rhr": vit["rhr"]["value"],
+        "bodyBattery": vit["bodyBattery"]["value"], "sleep": vit["sleep"]["value"],
+        "stress": vit["stress"]["value"], "vo2max": vit["vo2max"]["value"],
+    }
+    hist = update_history(
+        os.path.join(APP, "history.json"), TODAY, vitals_raw,
+        m.get("activities", []),
+        CONFIG["physiology"]["lactateThresholdHr"],
+        CONFIG["physiology"]["restingHr"],
+    )
+    last = hist[-1]
+    print(f"  history.json: {len(hist)} Tage — TSS {last['tss']}, "
+          f"CTL {last.get('ctl')}, ATL {last.get('atl')}, TSB {last.get('tsb')}")
+
+    # aktuellen Plan-Block für die PWA spiegeln (Plan-Tab / Kalender)
+    plan = latest_plan()
+    if plan:
+        with open(os.path.join(APP, "plan.json"), "w", encoding="utf-8") as f:
+            json.dump(plan, f, ensure_ascii=False, indent=2)
+        print(f"  plan.json: {plan.get('block','')} — {len(plan.get('weeks',[]))} Wochen")
 
     # plan.ics neu bauen
     sys.argv = [sys.argv[0]]

@@ -1,5 +1,5 @@
 /* TriCoach Service Worker — App-Shell cache-first, data.json network-first */
-const CACHE = "tricoach-v2";
+const CACHE = "tricoach-v3";
 const SHELL = [
   "./index.html",
   "./style.css",
@@ -22,8 +22,9 @@ self.addEventListener("activate", (e) => {
 self.addEventListener("fetch", (e) => {
   const url = new URL(e.request.url);
 
-  // data.json + plan.ics: network-first, fall back to cache
-  if (url.pathname.endsWith("data.json") || url.pathname.endsWith("plan.ics")) {
+  // Daten-Files: network-first, fall back to cache
+  const networkFirst = ["data.json", "history.json", "plan.json", "review.json", "plan.ics"];
+  if (networkFirst.some((f) => url.pathname.endsWith(f))) {
     e.respondWith(
       fetch(e.request)
         .then((res) => {

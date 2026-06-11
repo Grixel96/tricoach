@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T07:17:00+02:00",
+  "generatedAt": "2026-06-11T10:11:00+02:00",
   "source": "Garmin Connect (Marvin Griegel)",
   "athlete": {
     "firstName": "Marvin",
@@ -64,8 +64,8 @@
       "value": 97,
       "unit": "",
       "status": "high",
-      "high": 100,
-      "low": 40,
+      "high": 59,
+      "low": 38,
       "trendIcon": "↑",
       "label": "geladen"
     },
@@ -94,19 +94,19 @@
   "racePredictions": [
     {
       "dist": "5K",
-      "time": "19:39"
+      "time": "19:37"
     },
     {
       "dist": "10K",
-      "time": "41:51"
+      "time": "41:49"
     },
     {
       "dist": "HM",
-      "time": "1:33:52"
+      "time": "1:33:50"
     },
     {
       "dist": "M",
-      "time": "3:27:22"
+      "time": "3:27:15"
     }
   ],
   "vo2maxTrend": [
@@ -350,39 +350,41 @@
       ]
     }
   ],
-  "recentActivities": [
-    {
-      "date": "2026-06-09",
-      "discipline": "strength",
-      "name": "Krafttraining",
-      "detail": "strength_training"
-    },
-    {
-      "date": "2026-06-08",
-      "discipline": "run",
-      "name": "Bochum - Basis",
-      "detail": "10.0 km"
-    },
-    {
-      "date": "2026-06-07",
-      "discipline": "bike",
-      "name": "Recklinghausen Rennradfahren",
-      "detail": "63.5 km"
-    },
-    {
-      "date": "2026-06-06",
-      "discipline": "bike",
-      "name": "Recklinghausen Rennradfahren",
-      "detail": "77.4 km"
-    },
-    {
-      "date": "2026-06-04",
-      "discipline": "run",
-      "name": "Recklinghausen Laufen",
-      "detail": "8.9 km"
-    }
-  ],
+  "recentActivities": [],
   "weekSummary": {
     "note": "Tagesform GREEN · Readiness 84."
+  },
+  "profile": {
+    "name": "Marvin Griegel",
+    "age": 29,
+    "sex": "male",
+    "weightKg": 84,
+    "heightCm": 186,
+    "race": {
+      "name": "IRONMAN 70.3 Zell am See-Kaprun",
+      "location": "Zell am See, Österreich",
+      "date": "2027-08-29",
+      "goal": "Solides erstes/schnelles 70.3 als Baustein Richtung langfristigem Kona-Ziel. Schwimmen vom Limiter zur Waffe machen."
+    },
+    "physiology": {
+      "vo2maxRunning": 54,
+      "restingHr": 42,
+      "maxHr": 191,
+      "lactateThresholdHr": 167,
+      "hrvBaseline": 71,
+      "cyclingFtpWatts": null,
+      "swimCssPer100m": null
+    },
+    "weeklyHours": {
+      "min": 12,
+      "max": 16
+    },
+    "sessionsPerWeek": {
+      "swim": 3,
+      "bike": 3,
+      "run": 3,
+      "strength": 2
+    },
+    "philosophy": "Polarisiert 80/20 (Großteil locker Z1-Z2, gezielte harte Reize Z4-Z5). Long-Course-Schule im Geist von Laura Philipp / Kristian Blummenfelt: hohe aerobe Basis, Durability, Schwimm-Technik-Obsession, Brick-Spezifik, datengesteuerte Regeneration."
   }
 }

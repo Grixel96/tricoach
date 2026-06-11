@@ -41,11 +41,19 @@ jobs:
           GARMINTOKENS: ${{ secrets.GARMINTOKENS }}
         run: python tools/daily_update.py
 
+      # Wöchentliches KI-Review (nur So-Cron oder manuell). Ohne ANTHROPIC_API_KEY
+      # läuft es regelbasiert weiter (kein harter Fehler).
+      - name: Weekly KI-Review
+        if: github.event.schedule == '0 17 * * 0' || github.event_name == 'workflow_dispatch'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python tools/weekly_review.py
+
       - name: Commit changes
         run: |
           git config user.name "TriCoach Bot"
           git config user.email "tricoach-bot@users.noreply.github.com"
-          git add app/data.json app/plan.ics
+          git add app/data.json app/plan.ics app/history.json app/plan.json app/review.json
           if git diff --staged --quiet; then
             echo "Keine Änderungen."
           else

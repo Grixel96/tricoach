@@ -71,6 +71,23 @@ Offiziellen 70.3-Termin 2027 in `config/athlete.json` (`race.date`) eintragen, s
 - **Monatlich:** Claude Code öffnen → „nächsten Trainingsblock bauen". Ich ziehe deinen Verlauf, baue `coach/plan-<JJJJ-MM>.json`, pushe Workouts auf die Uhr, committe.
 - **Täglich:** läuft von allein. App morgens checken.
 
+## KI-Coach-Chat (Cloudflare Worker)
+
+Der interaktive Chat im **Coach**-Tab läuft über einen kleinen Cloudflare Worker
+(`worker/`), der den Anthropic-API-Key hält (nie im Browser) und mit einer Passphrase
+geschützt ist (GitHub Pages ist öffentlich). Gratis-Tier reicht für Einzelnutzung.
+
+Einmalig einrichten (Windows, braucht **Node.js** für `npx`):
+```powershell
+cd worker
+npx wrangler login
+npx wrangler secret put ANTHROPIC_API_KEY   # deinen Anthropic-Key einfügen
+npx wrangler secret put CHAT_PASSPHRASE     # frei wählbares Passwort
+npx wrangler deploy                         # gibt die Worker-URL aus
+```
+Dann in der App **Coach**-Tab öffnen → Worker-URL + Passphrase eintragen (bleibt nur
+auf dem Gerät, `localStorage`). Lokal testen mit `npx wrangler dev`.
+
 ## Lokal testen
 ```bash
 python -m http.server 8765 --directory app   # → http://localhost:8765
