@@ -1,27 +1,35 @@
 {
-  "generatedAt": "2026-06-11T10:11:00+02:00",
+  "generatedAt": "2026-06-11T08:37:00+02:00",
   "source": "regelbasiert",
   "weekStart": "2026-06-15",
   "weekLabel": "Build 1",
   "targetHours": 12,
   "lastWeek": {
     "hasData": true,
-    "actualTss": 0,
-    "sessions": 0,
-    "byDiscipline": {},
-    "avgReadiness": 84,
-    "ctl": 0.0,
-    "atl": 0.0,
-    "tsb": 0.0,
+    "actualTss": 508.0,
+    "sessions": 5,
+    "byDiscipline": {
+      "run": 2,
+      "bike": 2,
+      "strength": 1
+    },
+    "avgReadiness": 56,
+    "ctl": 59.0,
+    "atl": 44.3,
+    "tsb": 14.7,
     "plannedTss": null
   },
-  "summary": "Letzte Woche: 0 Einheiten, 0 TSS, Ø Readiness 84. Gute Erholung (Ø Readiness 84) — Spielraum nach oben.",
-  "highlights": [],
+  "summary": "Letzte Woche: 5 Einheiten, 508 TSS, Ø Readiness 56. Solide Woche, Last konstant fahren.",
+  "highlights": [
+    "2× run",
+    "2× bike",
+    "1× strength"
+  ],
   "focus": [
     "Schwimmtechnik & Frequenz (Limiter)",
     "Aerobe Basis locker halten (80/20)",
     "Quality nur bei grüner Tagesform"
   ],
   "adjustments": [],
-  "load": "leicht erhöhen"
+  "load": "halten"
 }

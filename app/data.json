@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T10:11:00+02:00",
+  "generatedAt": "2026-06-11T08:37:00+02:00",
   "source": "Garmin Connect (Marvin Griegel)",
   "athlete": {
     "firstName": "Marvin",
@@ -61,11 +61,11 @@
       "label": "Ruhepuls"
     },
     "bodyBattery": {
-      "value": 97,
+      "value": 91,
       "unit": "",
       "status": "high",
-      "high": 59,
-      "low": 38,
+      "high": 100,
+      "low": 40,
       "trendIcon": "↑",
       "label": "geladen"
     },
@@ -77,7 +77,7 @@
       "label": "Schlaf"
     },
     "stress": {
-      "value": 10,
+      "value": 11,
       "unit": "",
       "status": "low",
       "trendIcon": "→",
@@ -94,19 +94,19 @@
   "racePredictions": [
     {
       "dist": "5K",
-      "time": "19:37"
+      "time": "19:39"
     },
     {
       "dist": "10K",
-      "time": "41:49"
+      "time": "41:51"
     },
     {
       "dist": "HM",
-      "time": "1:33:50"
+      "time": "1:33:52"
     },
     {
       "dist": "M",
-      "time": "3:27:15"
+      "time": "3:27:22"
     }
   ],
   "vo2maxTrend": [
@@ -350,7 +350,38 @@
       ]
     }
   ],
-  "recentActivities": [],
+  "recentActivities": [
+    {
+      "date": "2026-06-09",
+      "discipline": "strength",
+      "name": "Krafttraining",
+      "detail": "strength_training"
+    },
+    {
+      "date": "2026-06-08",
+      "discipline": "run",
+      "name": "Bochum - Basis",
+      "detail": "10.0 km"
+    },
+    {
+      "date": "2026-06-07",
+      "discipline": "bike",
+      "name": "Recklinghausen Rennradfahren",
+      "detail": "63.5 km"
+    },
+    {
+      "date": "2026-06-06",
+      "discipline": "bike",
+      "name": "Recklinghausen Rennradfahren",
+      "detail": "77.4 km"
+    },
+    {
+      "date": "2026-06-04",
+      "discipline": "run",
+      "name": "Recklinghausen Laufen",
+      "detail": "8.9 km"
+    }
+  ],
   "weekSummary": {
     "note": "Tagesform GREEN · Readiness 84."
   },
