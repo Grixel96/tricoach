@@ -1,5 +1,5 @@
 /* TriCoach Service Worker — App-Shell cache-first, data.json network-first */
-const CACHE = "tricoach-v1";
+const CACHE = "tricoach-v2";
 const SHELL = [
   "./index.html",
   "./style.css",
