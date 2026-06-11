@@ -1,0 +1,17 @@
+[
+  {
+    "date": "2026-06-11",
+    "readiness": 84,
+    "hrv": 71,
+    "rhr": 39,
+    "bodyBattery": 97,
+    "sleep": 7.8,
+    "stress": 10,
+    "vo2max": 54,
+    "tss": 0,
+    "activities": [],
+    "ctl": 0.0,
+    "atl": 0.0,
+    "tsb": 0.0
+  }
+]

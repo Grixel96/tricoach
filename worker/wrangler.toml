@@ -1,0 +1,11 @@
+name = "tricoach-chat"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+# Secrets (NICHT hier eintragen — via CLI setzen):
+#   npx wrangler secret put ANTHROPIC_API_KEY
+#   npx wrangler secret put CHAT_PASSPHRASE
+#
+# Lokal testen:  npx wrangler dev
+# Deploy:        npx wrangler deploy
+# Ergebnis-URL:  https://tricoach-chat.<dein-subdomain>.workers.dev

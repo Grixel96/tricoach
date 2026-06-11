@@ -7,6 +7,9 @@ __pycache__/
 app/data.bak.json
 *.bak.json
 
+# Lokales Dev-Tooling (Preview-Server etc.)
+.claude/
+
 # Secrets — niemals committen
 *token*.json
 .garminconnect/
