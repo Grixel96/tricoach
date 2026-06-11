@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T08:37:00+02:00",
+  "generatedAt": "2026-06-11T17:49:00+02:00",
   "source": "Garmin Connect (Marvin Griegel)",
   "athlete": {
     "firstName": "Marvin",
@@ -21,12 +21,12 @@
     "blockProgress": 0.0
   },
   "readiness": {
-    "score": 84,
-    "level": "HIGH",
-    "label": "Grünes Licht",
-    "verdict": "green",
-    "recoveryTimeHours": 0,
-    "message": "Readiness 84 — Plan wie vorgesehen, Quality freigegeben."
+    "score": 57,
+    "level": "MODERATE",
+    "label": "Gelb",
+    "verdict": "amber",
+    "recoveryTimeHours": 2000,
+    "message": "Readiness 57 — Intensität raus: locker statt hart, Umfang leicht kürzen."
   },
   "today": {
     "date": "2026-06-11",
@@ -35,7 +35,7 @@
     "title": "Ruhetag",
     "duration": "—",
     "loadLabel": "Erholung",
-    "adjustment": "Keine Anpassung — Readiness grün (84). Plan wie vorgesehen.",
+    "adjustment": "Angepasst (gelb, 57): harte Teile → Z2, Intervalle −30 %, Long −20 %.",
     "status": "rest",
     "structure": [
       "Lockere Mobility / Spaziergang",
@@ -61,9 +61,9 @@
       "label": "Ruhepuls"
     },
     "bodyBattery": {
-      "value": 91,
+      "value": 42,
       "unit": "",
-      "status": "high",
+      "status": "amber",
       "high": 100,
       "low": 40,
       "trendIcon": "↑",
@@ -77,14 +77,14 @@
       "label": "Schlaf"
     },
     "stress": {
-      "value": 11,
+      "value": 18,
       "unit": "",
       "status": "low",
       "trendIcon": "→",
       "label": "Stress"
     },
     "vo2max": {
-      "value": 54,
+      "value": 54.0,
       "unit": "",
       "status": "up",
       "trendIcon": "↑",
@@ -352,6 +352,12 @@
   ],
   "recentActivities": [
     {
+      "date": "2026-06-11",
+      "discipline": "run",
+      "name": "Bochum Laufen",
+      "detail": "10.0 km"
+    },
+    {
       "date": "2026-06-09",
       "discipline": "strength",
       "name": "Krafttraining",
@@ -374,16 +380,10 @@
       "discipline": "bike",
       "name": "Recklinghausen Rennradfahren",
       "detail": "77.4 km"
-    },
-    {
-      "date": "2026-06-04",
-      "discipline": "run",
-      "name": "Recklinghausen Laufen",
-      "detail": "8.9 km"
     }
   ],
   "weekSummary": {
-    "note": "Tagesform GREEN · Readiness 84."
+    "note": "Tagesform AMBER · Readiness 57."
   },
   "profile": {
     "name": "Marvin Griegel",
