@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-10T19:16:00+02:00",
+  "generatedAt": "2026-06-11T07:15:00+02:00",
   "source": "Garmin Connect (Marvin Griegel)",
   "athlete": {
     "firstName": "Marvin",
@@ -10,7 +10,7 @@
     "location": "Zell am See, Österreich",
     "date": "2027-08-29",
     "distanceLabel": "1,9 / 90 / 21,1 km",
-    "daysToGo": 445,
+    "daysToGo": 444,
     "weeksToGo": 63
   },
   "phase": {
@@ -21,21 +21,21 @@
     "blockProgress": 0.0
   },
   "readiness": {
-    "score": 79,
+    "score": 84,
     "level": "HIGH",
     "label": "Grünes Licht",
     "verdict": "green",
-    "recoveryTimeHours": 297,
-    "message": "Readiness 79 — Plan wie vorgesehen, Quality freigegeben."
+    "recoveryTimeHours": 0,
+    "message": "Readiness 84 — Plan wie vorgesehen, Quality freigegeben."
   },
   "today": {
-    "date": "2026-06-10",
-    "weekday": "Mittwoch",
+    "date": "2026-06-11",
+    "weekday": "Donnerstag",
     "discipline": "rest",
     "title": "Ruhetag",
     "duration": "—",
     "loadLabel": "Erholung",
-    "adjustment": "Keine Anpassung — Readiness grün (79). Plan wie vorgesehen.",
+    "adjustment": "Keine Anpassung — Readiness grün (84). Plan wie vorgesehen.",
     "status": "rest",
     "structure": [
       "Lockere Mobility / Spaziergang",
@@ -53,7 +53,7 @@
       "label": "HRV"
     },
     "rhr": {
-      "value": 44,
+      "value": 39,
       "unit": "bpm",
       "status": "good",
       "baseline": 42,
@@ -61,23 +61,23 @@
       "label": "Ruhepuls"
     },
     "bodyBattery": {
-      "value": 35,
+      "value": 98,
       "unit": "",
-      "status": "amber",
-      "high": 87,
-      "low": 35,
+      "status": "high",
+      "high": 100,
+      "low": 40,
       "trendIcon": "↑",
       "label": "geladen"
     },
     "sleep": {
-      "value": 7.2,
+      "value": 7.8,
       "unit": "h",
-      "status": "amber",
+      "status": "very_good",
       "trendIcon": "→",
       "label": "Schlaf"
     },
     "stress": {
-      "value": 25,
+      "value": 9,
       "unit": "",
       "status": "low",
       "trendIcon": "→",
@@ -94,19 +94,19 @@
   "racePredictions": [
     {
       "dist": "5K",
-      "time": "19:37"
+      "time": "19:39"
     },
     {
       "dist": "10K",
-      "time": "41:49"
+      "time": "41:51"
     },
     {
       "dist": "HM",
-      "time": "1:33:50"
+      "time": "1:33:52"
     },
     {
       "dist": "M",
-      "time": "3:27:15"
+      "time": "3:27:22"
     }
   ],
   "vo2maxTrend": [
@@ -143,55 +143,211 @@
       "v": 54
     }
   ],
+  "weekMeta": {
+    "label": "Build 1",
+    "weekStart": "2026-06-15",
+    "targetHours": 12,
+    "isUpcoming": true
+  },
   "week": [
     {
       "day": "Mo",
       "date": "2026-06-15",
       "discipline": "swim",
       "label": "Technik & Wassergefühl",
-      "status": "planned"
+      "status": "planned",
+      "totalMinutes": 100,
+      "sessions": [
+        {
+          "discipline": "swim",
+          "title": "Technik & Wassergefühl",
+          "duration": 55,
+          "intensity": "Z1–2",
+          "structure": [
+            "300 m einschwimmen locker",
+            "6×50 m Drills (Catch-up / Fingertip-Drag) /20s P",
+            "8×50 m @ CSS+5s /15s P",
+            "100 m Beine mit Brett",
+            "200 m ausschwimmen"
+          ],
+          "purpose": "Frequenz + Technik. Sauber statt schnell."
+        },
+        {
+          "discipline": "strength",
+          "title": "Kraft Unterkörper + Rumpf",
+          "duration": 45,
+          "intensity": "—",
+          "structure": [
+            "Kniebeuge 3×8",
+            "Ausfallschritte 3×10/Bein",
+            "Hip Thrust 3×10",
+            "Plank 3×45s + Side-Plank",
+            "Wadenheben 3×15"
+          ],
+          "purpose": "Verletzungsschutz, Antrieb fürs Rad."
+        }
+      ]
     },
     {
       "day": "Di",
       "date": "2026-06-16",
       "discipline": "run",
       "label": "Schwellenlauf",
-      "status": "planned"
+      "status": "planned",
+      "totalMinutes": 65,
+      "sessions": [
+        {
+          "discipline": "run",
+          "title": "Schwellenlauf",
+          "duration": 65,
+          "intensity": "Z4-Kern",
+          "structure": [
+            "15′ einlaufen Z1–2",
+            "4×6′ @ Schwelle 4:08–4:18/km (HR 161–176), 2′ Trab dazwischen",
+            "12′ auslaufen Z1"
+          ],
+          "purpose": "Laktatschwelle anheben. Ökonomie halten."
+        }
+      ]
     },
     {
       "day": "Mi",
       "date": "2026-06-17",
       "discipline": "bike",
       "label": "Sweet-Spot Endurance",
-      "status": "planned"
+      "status": "planned",
+      "totalMinutes": 80,
+      "sessions": [
+        {
+          "discipline": "bike",
+          "title": "Sweet-Spot Endurance",
+          "duration": 80,
+          "intensity": "Z2–3",
+          "structure": [
+            "20′ einrollen Z2",
+            "3×10′ Sweet-Spot (HR ~150–160, RPE 7), 5′ locker dazwischen",
+            "Rest Z2",
+            "10′ ausrollen"
+          ],
+          "purpose": "Aerobe Kraftausdauer ohne Ermüdungsspitze."
+        }
+      ]
     },
     {
       "day": "Do",
       "date": "2026-06-18",
       "discipline": "swim",
       "label": "Ausdauer-Set",
-      "status": "planned"
+      "status": "planned",
+      "totalMinutes": 100,
+      "sessions": [
+        {
+          "discipline": "swim",
+          "title": "Ausdauer-Set",
+          "duration": 60,
+          "intensity": "Z2",
+          "structure": [
+            "300 m einschwimmen",
+            "4×50 m Drill /15s P",
+            "5×150 m @ CSS+5s /20s P",
+            "100 m locker",
+            "200 m ausschwimmen"
+          ],
+          "purpose": "Kontinuität bis 1500 m+ aufbauen."
+        },
+        {
+          "discipline": "strength",
+          "title": "Kraft Oberkörper + Zug",
+          "duration": 40,
+          "intensity": "—",
+          "structure": [
+            "Klimmzüge/Latzug 3×8",
+            "Rudern 3×10",
+            "Schulterdrücken 3×10",
+            "Pull-Apart Band 3×15",
+            "Anti-Rotation Pallof 3×12"
+          ],
+          "purpose": "Zugmuskulatur fürs Schwimmen."
+        }
+      ]
     },
     {
       "day": "Fr",
       "date": "2026-06-19",
       "discipline": "run",
       "label": "Langer Lauf locker",
-      "status": "planned"
+      "status": "planned",
+      "totalMinutes": 80,
+      "sessions": [
+        {
+          "discipline": "run",
+          "title": "Langer Lauf locker",
+          "duration": 80,
+          "intensity": "Z2",
+          "structure": [
+            "80′ durchgehend Z2 (HR 131–146, 4:55–5:20/km)",
+            "Letzte 10′ leicht progressiv",
+            "Strikt aerob — nicht schneller werden lassen"
+          ],
+          "purpose": "Aerobe Basis + Durability."
+        }
+      ]
     },
     {
       "day": "Sa",
       "date": "2026-06-20",
       "discipline": "bike",
       "label": "Long Ride aerob",
-      "status": "planned"
+      "status": "planned",
+      "totalMinutes": 195,
+      "sessions": [
+        {
+          "discipline": "bike",
+          "title": "Long Ride aerob",
+          "duration": 180,
+          "intensity": "Z2",
+          "structure": [
+            "3 h gleichmäßig Z2 (HR 131–146)",
+            "Alle 30′ kurz aus dem Sattel",
+            "Verpflegung üben: 60 g Kohlenhydrate/h, trinken"
+          ],
+          "purpose": "Renndistanz-Ökonomie, Fettstoffwechsel, Fueling."
+        },
+        {
+          "discipline": "run",
+          "title": "Brick-Lauf",
+          "duration": 15,
+          "intensity": "Z2–3",
+          "structure": [
+            "Direkt vom Rad",
+            "15′ einlaufen ins Renngefühl, letzte 5′ Renntempo (~4:40/km)"
+          ],
+          "purpose": "Wechsel Rad→Lauf, müde Beine."
+        }
+      ]
     },
     {
       "day": "So",
       "date": "2026-06-21",
       "discipline": "swim",
       "label": "Technik-Recovery",
-      "status": "planned"
+      "status": "planned",
+      "totalMinutes": 45,
+      "sessions": [
+        {
+          "discipline": "swim",
+          "title": "Technik-Recovery",
+          "duration": 45,
+          "intensity": "Z1",
+          "structure": [
+            "200 m locker",
+            "8×50 m Drills, Fokus hohe Ellbogen",
+            "4×100 m @ CSS+8s ganz locker",
+            "150 m ausschwimmen"
+          ],
+          "purpose": "3. Schwimmreiz/Woche, lockeres Wassergefühl."
+        }
+      ]
     }
   ],
   "recentActivities": [
@@ -227,6 +383,6 @@
     }
   ],
   "weekSummary": {
-    "note": "Tagesform GREEN · Readiness 79."
+    "note": "Tagesform GREEN · Readiness 84."
   }
 }
