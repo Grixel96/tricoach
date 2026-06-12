@@ -2488,5 +2488,20 @@
     "ctl": 60.9,
     "atl": 55.4,
     "tsb": 5.5
+  },
+  {
+    "date": "2026-06-12",
+    "readiness": 75,
+    "hrv": 71,
+    "rhr": 44,
+    "bodyBattery": 60,
+    "sleep": 8.6,
+    "stress": 24,
+    "vo2max": 54,
+    "tss": 0,
+    "activities": [],
+    "ctl": 59.4,
+    "atl": 47.4,
+    "tsb": 12.0
   }
 ]
